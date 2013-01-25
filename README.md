@@ -1,15 +1,15 @@
 The simplest TF-IDF library imaginable.
 
-Add your documents as two-element lists `[docname, [list_of_words_in_the_document]]` with `addDocument(docname, list_of_words)`.
+Add your documents as two-element lists `[doc_name, [list_of_words_in_the_document]]` with `addDocument(doc_name, list_of_words)`.
 
 ```python
-table.addDocument ("foo", ["alpha", "bravo", "charlie", "delta", "echo", "foxtrot", "golf", "hotel"])
+table.addDocument("foo", ["alpha", "bravo", "charlie", "delta", "echo", "foxtrot", "golf", "hotel"])
 ```
 
-Get a list of all the `[docname, similarity_score]` pairs relative to a list of words by calling `similarities([list_of_words])`.  Resulting similarities will always be between `0.0` and `1.0`, inclusive.
+Get a list of all the `[doc_name, similarity_score]` pairs relative to a list of words by calling `similarities([list_of_words])`. Resulting similarities will always be between `0.0` and `1.0`, inclusive.
 
 ```python
-table.similarities (["alpha", "bravo", "charlie"])
+table.similarities(["alpha", "bravo", "charlie"])
 ```
 
 So, for example:
