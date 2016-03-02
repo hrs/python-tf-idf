@@ -51,7 +51,7 @@ class tfidf:
       score = 0.0
       doc_dict = doc[1]
       for k in query_dict:
-        if doc_dict.has_key(k):
+        if k in doc_dict:
           score += (query_dict[k] / self.corpus_dict[k]) + (doc_dict[k] / self.corpus_dict[k])
       sims.append([doc[0], score])
 
