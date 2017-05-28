@@ -17,7 +17,7 @@ class TfIdf:
     self.documents = []
     self.corpus_dict = {}
 
-  def addDocument(self, doc_name, list_of_words):
+  def add_document(self, doc_name, list_of_words):
     # building a dictionary
     doc_dict = {}
     for w in list_of_words:

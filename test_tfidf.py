@@ -5,9 +5,9 @@ import unittest
 class TestTfIdf(unittest.TestCase):
     def test_similarity(self):
         table = tfidf.TfIdf()
-        table.addDocument("foo", ["a", "b", "c", "d", "e", "f", "g", "h"])
-        table.addDocument("bar", ["a", "b", "c", "i", "j", "k"])
-        table.addDocument("baz", ["k", "l", "m", "n"])
+        table.add_document("foo", ["a", "b", "c", "d", "e", "f", "g", "h"])
+        table.add_document("bar", ["a", "b", "c", "i", "j", "k"])
+        table.add_document("baz", ["k", "l", "m", "n"])
 
         self.assertEqual(
             table.similarities(["a", "b", "c"]),
