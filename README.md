@@ -17,7 +17,7 @@ So, for example:
 ```python
 import tfidf
 
-table = tfidf.tfidf()
+table = tfidf.TfIdf()
 table.addDocument("foo", ["alpha", "bravo", "charlie", "delta", "echo", "foxtrot", "golf", "hotel"])
 table.addDocument("bar", ["alpha", "bravo", "charlie", "india", "juliet", "kilo"])
 table.addDocument("baz", ["kilo", "lima", "mike", "november"])

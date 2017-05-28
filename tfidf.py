@@ -11,7 +11,7 @@ See the README for a usage example.
 import sys
 import os
 
-class tfidf:
+class TfIdf:
   def __init__(self):
     self.weighted = False
     self.documents = []
