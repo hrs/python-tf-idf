@@ -22,7 +22,17 @@ table.addDocument("foo", ["alpha", "bravo", "charlie", "delta", "echo", "foxtrot
 table.addDocument("bar", ["alpha", "bravo", "charlie", "india", "juliet", "kilo"])
 table.addDocument("baz", ["kilo", "lima", "mike", "november"])
 
-print table.similarities (["alpha", "bravo", "charlie"]) # => [['foo', 0.6875], ['bar', 0.75], ['baz', 0.0]]
+print table.similarities(["alpha", "bravo", "charlie"]) # => [['foo', 0.6875], ['bar', 0.75], ['baz', 0.0]]
 ```
 
-*Disclaimer:* This library is a pretty clean example of how TF-IDF operates. However, it's totally unconcerned with efficiency (it's really just an exercise to brush up my Python skills), so you probably don't want to be using it in production. If you're looking for a more heavy-duty Python library to do information retrieval and topic modelling, I'd suggest taking a look at [Gensim](http://radimrehurek.com/gensim/).
+### Run the tests
+
+The tests use the standard library's `unittest` module, so there's no need to install anything. Just run:
+
+```shell
+$ python test_tfidf.py
+```
+
+### Disclaimer
+
+This library is a pretty clean example of how TF-IDF operates. However, it's totally unconcerned with efficiency (it's really just an exercise to brush up my Python skills), so you probably don't want to be using it in production. If you're looking for a more heavy-duty Python library to do information retrieval and topic modelling, I'd suggest taking a look at [Gensim](http://radimrehurek.com/gensim/).
